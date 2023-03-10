@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+      
+      .container{
+        display: grid;
+        grid-template-columns: 5fr 5fr;
+        padding: 5% 10%;
+      }
+
+.left-sides img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.second{
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  align-items: center;
+}
+
+.third-left{
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  align-items: center;
+}
+.top-header {
+  background-color: rgb(233, 85, 35);
+  color: white;
+  height: 3em;
+  margin-bottom: 1.25em;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.hamburger-icon {
+  margin-left: 3mm;
+  position: relative;
+}
+
+.hamburger-icon label::before{
+  border-bottom: 0.13em solid white;
+  border-top: 0.38em double white;
+  bottom: 1.2em;
+  content: "";
+  height: 0.1em;
+  position: absolute;
+  right: 1em;
+  width: 1em;
+}
+.top-header h3{
+  margin-left: 0.2;
+}
+#checkbox-menu{
+  display: none;
+}
+
+#checkbox-menu: + nav {
+  opacity: 1;
+  
+}
+nav.nav-menu ul li{
+  border-bottom: 1px solid lightblue;
+  font-size: 0.87em;
+  height: 2.23em;
+  line-height: 2.23em;
+  padding-left: 1.142em;
+}
+
+nav.nav-menu ul li a{
+  color: lightblue;
+  text-decoration: none;
+}
+
+nav.nav-menu ul li a:hover{
+  color: green;
+}
+nav.nav-menu{
+  background-color: white;
+  height: auto;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  position: fixed;
+  transition: all 75s ease-in;
+  top: 3em;
+  visibility: visible;
+  z-index: 5;
+}
+
+.right .right1 h4{
+  color: rgb(23, 123, 89);
+  font-style: oblique;
+  font-family: var(--about-font);
+}
+
+.container p{
+  color: darkslategrey;
+  font-style: initial;
+}
+
+
+
+button{
+  padding: 5px 20px;
+  font-family: var(--heading-font);
+  background-color: rgb(50, 33, 33);
+  color:whitesmoke;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 0;
+  outline:none;
+  font-weight: 800;
+  box-shadow: 2px 2px 3px rgb(188, 168, 168);
+  margin-top:50px;
+}
+button:hover{
+  background-color: lightblue;
+  color: blue;
+}
+
+
+
+    </style>
+
+
+  </head>
+  <body>
+    <header class="top-header">
+      <a img src="./assets/logo.jpg" width="50px" height="50px"></a>
+      <h3>Nelson Ogbaji</h3>
+      <div class="hamburger-icon">
+        <label for="checkbox-menu"></label>
+      </div>
+    </header>
+    <input id="checkbox-menu" type="checkbox">
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="Home.html">HOME</a></li>
+        <li><a href="Category.html">CATEGORIES</a></li>
+        <li><a href="Order.html">MY ORDER</a></li>
+        <li><a href="Contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+
+
+    <section class="container">
+      <div class="left-sides">
+        <img src="./assets/Agric image.png">
+      </div>
+      <div class="right">
+        <div class="right1">
+          <h4>About Us</h4>
+          <h3>We believe In Organic Foods</h3>
+          <p>welcome to the world of natural and Organic. Here you can discoverthe bounty of nature.</p>
+        </div>
+
+      <div class="second-part">
+        <div class="second second-up">
+          <img src="./assets/bibimbap.png" width="50px" height="50px">
+          <div>
+            <h3>Organic Food Only</h3>
+            <p>product that you orderd will be verified that we have or not, if we have it we will start to move on with the next step</p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="second second-down">
+        <img src="./assets/fruits.png" width="50px" height="50px">
+        <div>
+          <h3>Quality Standard</h3>
+          <p>your product is packed, it will be delivered to your nearby locality,</p>
+        </div>
+        <div class="btn-container">
+          <button>Shop Now</button>
+        </div>
+      </div>
+      
+      
+    </section>
+    <script src="" async defer></script>
+  </body>
+</html>
